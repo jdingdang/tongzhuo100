@@ -11,9 +11,7 @@
 <div id="app">
 	<ul>
 		<li v-for="item in items">
-		
-		<p>{{ item.title }}</p>	
-		<video v-bind:src="item.url" controls="controls"></video>
+		<a v-bind:href="item.url">{{ item.title }}</a>
 		</li>
 
 	</ul>
