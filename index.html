@@ -92,7 +92,7 @@ var vm = new Vue({
 		doSomething: function (a,b) {
 			var url = "https://100.dingdang.workers.dev"+a
 			$.ajaxSettings.async = false;
-			$.get("https://100.dingdang.workers.dev/v/2011-10/20228.html",function(data){
+			$.get("https://100.dingdang.workers.dev"+a,function(data){
 			const res=data.substring(data.indexOf("original=")+10,data.indexOf("clarity")-2)
 			url=res
 			window.open(url)
